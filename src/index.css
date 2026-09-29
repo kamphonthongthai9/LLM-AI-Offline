@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Prompt', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Cyber glowing animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.45);
+  }
+}
+
+.glow-cyan {
+  animation: pulseGlow 3s infinite;
+}

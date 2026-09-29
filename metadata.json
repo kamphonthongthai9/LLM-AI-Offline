@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Secure LLM & Voice Assistant Platform",
+  "description": "ระบบ AI แชทบอทและผู้ช่วยเสียงเฉพาะองค์กร พร้อมเครื่องคิดเลขคำนวณสเปคพารามิเตอร์ LLM และระบบความปลอดภัย Zero-Trust",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
